@@ -8,6 +8,8 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+  color: rgb(248, 239, 213);
 }
 
 .navbar{
@@ -19,10 +21,68 @@ body{
 
 .nav-item{
   padding: 20px;
-  color: rgb(248, 239, 213);
-  font-family: 'Dosis', sans-serif;
+  /* color: rgb(248, 239, 213);
+  font-family: 'Dosis', sans-serif; */
   font-weight: 500;
   transition: all 0.4s ease;
+}
+
+.nav-name{
+  padding: 20px 20px 0 20px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  font-size: 40px;
+}
+
+.nav-description{
+  padding: 0 20px 20px 20px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1080px){
+  .navbar{
+    flex-direction: column;
+  }
+  .end-nav{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-item{
+    padding:5px 10px;
+    display: inline-block;
+  }
+  .projects-wrapper{
+    flex-direction: column;
+  }
+  .project-section{
+    flex-direction: column;
+    padding: 0px;
+  }
+  .project-picture{
+    max-width: 300px;
+    border-radius: 5px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1080px){
+  .nav-name, .nav-description{
+    margin-left: 100px;
+  }
+  .project-picture{
+    max-height: 280px;
+    max-width: 500px;
+    border-radius: 5px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+  .project-section{
+    padding: 30px;
+    display: flex;
+  }
 }
 
 .nav-item:hover{
@@ -52,7 +112,96 @@ footer{
 
 .content{
   padding: 20px;
-  color: rgb(248, 239, 213);
-  font-family: 'Dosis', sans-serif;
   font-weight: 500;
+}
+
+.projects-wrapper{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.tag{
+  color: rgb(248, 239, 213);
+}
+
+.project-header{
+  padding: 0 0 10px 0;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  font-size: 30px;
+}
+
+.description{
+  max-width: 700px;
+}
+
+.rails{
+  color: rgb(202, 86, 86);
+}
+
+.bulma {
+  color: aquamarine;
+}
+
+.postgresql{
+  color: rgb(131, 131, 255);
+}
+
+.text{
+  font-size: 20px;
+  margin: 15px 0 15px 0;
+}
+
+.javascript{
+  color: yellow;
+}
+
+.pictures{
+  display: grid;
+}
+
+.tag{
+  padding: 10px;
+  background-color: rgb(68, 68, 68);
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.tag-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.devicon{
+  margin-right:10px;
+}
+
+.bulma{
+  max-height: 20px;
+  margin-right: 10px;
+}
+
+.code-buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.code, .live{
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+  border: 2px solid #ebe6ca;
+  transition: all 0.3s ease;
+}
+
+.code:hover, .live:hover{
+  background-color: black;
 }
