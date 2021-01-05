@@ -95,7 +95,7 @@ body{
 
 footer{
   width: 100vw;
-  position: fixed;
+  position: static;
   bottom: 0;
 }
 
@@ -203,5 +203,83 @@ footer{
 }
 
 .code:hover, .live:hover{
+  background-color: rgb(68, 68, 68);
+}
+
+.list-item {
+  margin-bottom: 5px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.title{
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+
+.divider{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #a09c87;
+  width: 80%;
+  margin:0 auto
+}
+
+.css{
+  color:rgb(147, 147, 255);
+}
+
+.contacts{
+  display: flex;
+  font-size: 20px;
+  padding: 20px;
+  background-color: rgb(45, 8, 80);
+  border-radius: 10px;
+  border: 1px solid #a09c87;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.email{
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+
+.copy{
+  transition: all .4s ease;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  border: 1px solid #a09c87;
+  border-radius: 10px;
+  padding: 5px 0 5px 0;
+  cursor: pointer;
+}
+
+.copy:hover{
+  background-color: #1d1919f2;
+}
+
+.success-message{
+  transition: all .4s ease;
   background-color: black;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.hidden{
+  visibility: hidden;
+  opacity: 0;
 }

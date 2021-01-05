@@ -21,7 +21,7 @@
               Henry Leto
             </h3>
             <div class="nav-description">
-              Web Developer
+              Full Stack Developer
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@
           </p>
           <p class="text">
             Users on Roundtable can make posts, comment on posts, and comment on comments (nested-comments). Post's can be image or text with up to three images per post.
-            Users can also great groups, which have an owner, admin and users, as well as a custom and private feed for each group. Addionally, Users can send and receive friend requests,
+            Users can also create groups, which have an owner, admin and users, as well as a custom and private feed for each group. Addionally, Users can send and receive friend requests,
             and accept or deny these requests.
             <p class="text">
               I also implemented both Google and Github API support using Oauth2, which allows users to import their information from these sites
@@ -75,18 +75,83 @@
             <span class="tag"><i class="devicon fa fa-tablet"></i>Responsive</span>
           </div>
           <div class="code-buttons">
-            <a href="" class="code">View Code</a>
-            <a href="" class="live">See it live</a>
+            <a href="https://github.com/nhleto/Roundtable" class="code" target="_blank" rel="noopener noreferrer">View Code</a>
+            <a href="http://social-roundtable.herokuapp.com" class="live" target="_blank" rel="noopener noreferrer">See it live</a>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="projects-wrapper">
+      <div class="project-section">
+        <div class="pictures">
+          <img src="images/Chess.png" alt="chess" class='project-picture'>
+          <img src="images/Chess-tests.png" alt="Chess-tests" class='project-picture'>
+        </div>
+        <div class="description">
+          <div class="project-header">Chess</div>
+          <p class="text">
+            Written in pure <span class="rails">Ruby</span>, this command-line chess game was developed following standard chess guidlines.
+            The game is programmed with all major chess moves in mind, including:
+          </p>
+          <p class="text">
+            <ul>
+              <li class='list-item'>En passant</li>
+              <li class='list-item'>Pawn promotion</li>
+              <li class='list-item'>Castling</li>
+              <li class='list-item'>Check</li>
+              <li class='list-item'>Checkmate</li>
+          </p>
+          <p class="text">Chess was developed with OOP concepts in mind. Utilizing principles like composition, inheritance, and clean
+            reusable code, this chess game was the culmination of months of hardwork in <span class="rails">Ruby</span>.
+          </p>
+          <p class="text">In addition to the game itself, I also wrote a full <span class="rails">Ruby</span> 
+            Rspec test suite that covers piece placement, major moves, and edge cases.
+          </p>
+          <div class="tag-list">
+            <span class="tag"><i class="devicon devicon-ruby-plain"></i>Ruby</span>
+            <span class="tag"><i class="devicon devicon-ruby-plain"></i>Rspec</span>
+            <span class="tag"><i class="devicon devicon-ruby-plain"></i>OOP</span>
+          </div>
+          <div class="code-buttons">
+            <a href="https://github.com/nhleto/Chess" class="code" target="_blank" rel="noopener noreferrer">View Code</a>
+            <a href="https://repl.it/@nhleto/Chess-1#lib/board.rb" class="live" target="_blank" rel="noopener noreferrer">See it live</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider">
+      <div class="description">
+        <h2 class="title">About Me</h2>
+        <p class="text">
+          Hi! I'm Henry Leto, a full stack software developer, specializing in <span class="rails">Ruby</span>, <span class="rails">Rails</span> + 
+          <span class="postgresql">SQL</span> backend technology, with experience in <span class="javascript">Javascript</span>, <span class="css">CSS</span>,
+          and <span class="css">CSS Frameworks</span>.
+        </p>
+        <p class="text">
+          I have a passion for programming and love <i>creating</i> things, from command-line games to fullstack websites, computer programming is my creative outlet.
+        </p>
+        <p class="text">When I'm not coding I enjoy working out, reading, and playing videogames.</p>
+      </div>
+    </div>
+    <div class="divider">
+      <div class="description">
+        <h2 class="title">Contact Me</h2>
+        <span class="contacts">
+          <i class="fa fa-envelope"></i>
+          <input class='email' value='hnr.leto11@gmail.com' readonly></input>
+        </span>
+        <span class="copy">Copy</span>
+        <span class="success-message hidden">Email Copied to Keyboard</span>
       </div>
     </div>
     <footer>
       <nav class='footer'>
         <div class="nav-item">
           <div class="center">
-            <i class="fa fa-github" style="font-size:36px"></i>
-            <span style='font-size: 20px;margin-left:10px'>Github</span>
+            <a href="https://github.com/nhleto" target="_blank" rel="noopener noreferrer" style='text-decoration:none;'>
+              <i class="fa fa-github" style="font-size:36px"></i>
+              <span style='font-size: 20px;margin-left:10px'>Github</span>
+            </a>
           </div>
         </div>
       </nav>
