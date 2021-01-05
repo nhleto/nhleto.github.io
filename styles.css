@@ -70,6 +70,10 @@ body{
     margin-right: 25px;
     margin-bottom: 20px;
   }
+  .scroll{
+    opacity: 0;
+    display: none;
+  }
 }
 @media only screen and (min-width: 1080px){
   .nav-name, .nav-description{
@@ -88,11 +92,6 @@ body{
   }
   .nav-item:last-child{
     margin-right: 100px;
-  }
-  .up-arrow{
-    transition: all 0.4s ease;
-    color: #a09c87;
-    font-size: 70px;
   }
 }
 
@@ -350,4 +349,5 @@ footer{
   background-color: transparent;
   text-decoration: none;
   cursor: pointer;
+  font-size: 70px;
 }
