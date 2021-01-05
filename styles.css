@@ -13,7 +13,6 @@ body{
 }
 
 .navbar{
-  width: 100vw;
   color: black;
   display: flex;
   justify-content: space-between;
