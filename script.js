@@ -30,3 +30,12 @@ document.querySelector('.copy').addEventListener('click', () => {
   }, 2000);
 });
 
+function about(){
+  const aboutMe = document.querySelector('.about-me')
+  aboutMe.scrollIntoView({ behavior: 'smooth' });
+}
+
+function contact(){
+  const contactMe = document.querySelector('.contact-me')
+  contactMe.scrollIntoView({ behavior: 'smooth' });
+}

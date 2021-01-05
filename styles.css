@@ -89,6 +89,20 @@ body{
   .nav-item:last-child{
     margin-right: 100px;
   }
+  .scroll{
+    transition: all 0.6s ease;
+    position: fixed;
+    bottom: 50px;
+    right: 70px;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .up-arrow{
+    transition: all 0.4s ease;
+    color: #a09c87;
+    font-size: 70px;
+  }
 }
 
 .nav-item:hover{
@@ -335,20 +349,4 @@ footer{
   font-size: 20px;
   cursor: pointer;
   height: fit-content;
-}
-
-.scroll{
-  transition: all 0.6s ease;
-  position: fixed;
-  bottom: 50px;
-  right: 70px;
-  background-color: transparent;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.up-arrow{
-  transition: all 0.4s ease;
-  color: #a09c87;
-  font-size: 70px;
 }
