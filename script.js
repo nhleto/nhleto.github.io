@@ -1,3 +1,21 @@
+const scrollButton = document.querySelector('.scroll')
+
+function onScroll() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    scrollButton.classList.remove("hidden");
+  } else {
+    scrollButton.classList.add("hidden");
+  }
+};
+
+window.addEventListener("scroll", onScroll);
+
+function topFunction(){
+  document.body.scrollTo({top: 0, behavior: 'smooth'});
+  document.documentElement.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+
 document.querySelector('.copy').addEventListener('click', () => {
   const email = document.querySelector('.email')
   const successMessage = document.querySelector('.success-message')
@@ -11,3 +29,4 @@ document.querySelector('.copy').addEventListener('click', () => {
     successMessage.classList.add('hidden')
   }, 2000);
 });
+

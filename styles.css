@@ -21,11 +21,14 @@ body{
 
 .nav-item{
   padding: 20px;
-  /* color: rgb(248, 239, 213);
-  font-family: 'Dosis', sans-serif; */
   font-weight: 500;
   transition: all 0.4s ease;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  height: fit-content;
 }
+
 
 .nav-name{
   padding: 20px 20px 0 20px;
@@ -82,6 +85,9 @@ body{
   .project-section{
     padding: 30px;
     display: flex;
+  }
+  .nav-item:last-child{
+    margin-right: 100px;
   }
 }
 
@@ -237,11 +243,10 @@ footer{
 .contacts{
   display: flex;
   font-size: 20px;
-  padding: 20px;
+  padding: 10px 5px 10px 20px;
   background-color: rgb(45, 8, 80);
   border-radius: 10px;
   border: 1px solid #a09c87;
-  margin-top: 20px;
   align-items: center;
 }
 
@@ -257,7 +262,7 @@ footer{
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  font-size: 25px;
+  font-size: 20px;
   border: 1px solid #a09c87;
   border-radius: 10px;
   padding: 5px 0 5px 0;
@@ -265,7 +270,7 @@ footer{
 }
 
 .copy:hover{
-  background-color: #1d1919f2;
+  background-color: #240000f2;
 }
 
 .success-message{
@@ -282,4 +287,68 @@ footer{
 .hidden{
   visibility: hidden;
   opacity: 0;
+}
+
+.linkedin{
+  transition: all .4s ease;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  border-radius: 10px;
+  border: 1px solid #a09c87;
+  margin: 20px 0 10px 0;
+  background-color: rgba(0, 255, 255, 0.342);
+  justify-content: center;
+  text-decoration: none;
+}
+
+.linkedin:hover{
+  background-color: rgba(0, 122, 126, 0.479);
+}
+
+.contact-info{
+  font-size: 25px;
+  margin-left:10px;
+}
+
+.social{
+  transition: all .4s ease;
+  margin-right: 20px;
+  color: #a09c87;
+}
+
+.social:hover{
+color: rgb(255, 255, 172);
+}
+
+footer{
+  border-top: 2px solid #a09c87;
+  width: 80%;
+  margin: auto;
+}
+
+.footer-item{
+  padding: 20px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  height: fit-content;
+}
+
+.scroll{
+  transition: all 0.6s ease;
+  position: fixed;
+  bottom: 50px;
+  right: 70px;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.up-arrow{
+  transition: all 0.4s ease;
+  color: #a09c87;
+  font-size: 70px;
 }
