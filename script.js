@@ -1,7 +1,7 @@
 const scrollButton = document.querySelector('.scroll')
 
 function onScroll() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
     scrollButton.classList.remove("hidden");
   } else {
     scrollButton.classList.add("hidden");
