@@ -53,19 +53,22 @@
           </p>
           <p class="text">
             Users on Roundtable can make posts, comment on posts, and comment on comments (nested-comments). Post's can be image or text with up to three images per post.
-            Users can also create groups, which have an owner, admin and users, as well as a custom and private feed for each group. Addionally, Users can send and receive friend requests,
+            Users can also create groups; which have an owner, admin and users, as well as a custom and private feed for each group. Addionally, Users can send and receive friend requests,
             and accept or deny these requests.
-            <p class="text">
-              I also implemented both Google and Github API support using Oauth2, which allows users to import their information from these sites
-              and create a profile on Roundtable.
-            </p>
+          </p>
+          <p class="text">
+            For deployment to Heroku, I used Amazon S3 cloud storage to allow user data to persist indefinitely.
+          </p>
+          <p class="text">
+            I also implemented both Google and Github API support using Oauth2, which allows users to import their information from these sites
+            and create a profile on Roundtable.
           </p>
           <div class="tag-list">
             <span class="tag"><i class="devicon devicon-ruby-plain"></i>Ruby</span>
             <span class="tag"><i class="devicon devicon-rails-plain"></i>Rails 5.2</span>
             <span class="tag"><i class="devicon devicon-postgresql-plain"></i>PostgreSQL</span>
             <span class="tag"><i class="devicon devicon-javascript-plain"></i>Javascript</span>
-            <span class="tag"><i class="devicon devicon-amazonwebservices-original"></i>Amazon S3</span>
+            <span class="tag"><i class="devicon devicon-amazonwebservices-original"></i>AWS S3</span>
             <span class="tag"><i class="devicon devicon-heroku-original"></i>Heroku</span>
             <span class="tag"><img src="images/bulma-logo.png" alt="bulma-icon" class='bulma'>Bulma CSS</span>
             <span class="tag"><i class="devicon devicon-google-plain"></i>Google API</span>
@@ -143,7 +146,7 @@
           <input class='email' value='hnr.leto11@gmail.com' readonly></input>
         </span>
         <span class="copy">Copy</span>
-        <span class="success-message hidden">Email Copied to Keyboard</span>
+        <span class="success-message hidden">Email Copied to Clipboard</span>
       </div>
     </div>
     <a class="hidden scroll" onclick="topFunction()">
