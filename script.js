@@ -39,3 +39,8 @@ function contact(){
   const contactMe = document.querySelector('.contact-me')
   contactMe.scrollIntoView({ behavior: 'smooth' });
 }
+
+function projects() {
+  const projects = document.querySelector('.projects')
+  projects.scrollIntoView({ behavior: 'smooth' });
+}
