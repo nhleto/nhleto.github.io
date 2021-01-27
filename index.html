@@ -59,7 +59,10 @@
     <div class="projects-wrapper">
       <div class="project-section">
         <div class="pictures">
-          <img src="images/Roundtable-login.png" alt="Roundtable-login" class='project-picture'>
+          <div class="mobile-wrapper">
+            <img src="images/roundtable-mobile.PNG" alt="Roundtable-login" class='project-picture'>
+            <img src="images/roundtable-mobile-homepage.PNG" alt="Roundtable-login" class='project-picture'>
+          </div>
           <img src="images/Roundtable.png" alt="Roundtable-website" class='project-picture'>
         </div>
         <div class="description">
@@ -81,6 +84,10 @@
             I also implemented both Google and Github API support using Oauth2, which allows users to import their information from these sites
             and create a profile on Roundtable.
           </p>
+          <div class="code-buttons">
+            <a href="https://github.com/nhleto/Roundtable" class="code" target="_blank" rel="noopener noreferrer">View Code</a>
+            <a href="http://social-roundtable.herokuapp.com" class="live" target="_blank" rel="noopener noreferrer">See it live</a>
+          </div>          
           <div class="tag-list">
             <span class="tag"><i class="devicon devicon-ruby-plain"></i>Ruby</span>
             <span class="tag"><i class="devicon devicon-rails-plain"></i>Rails 5.2</span>
@@ -91,11 +98,53 @@
             <span class="tag"><img src="images/bulma-logo.png" alt="bulma-icon" class='bulma'>Bulma CSS</span>
             <span class="tag"><i class="devicon devicon-google-plain"></i>Google API</span>
             <span class="tag"><i class="devicon devicon-github-original"></i>Github API</span>
-            <!-- <span class="tag"><i class="devicon fa fa-tablet"></i>Responsive</span> -->
+            <span class="tag"><i class="devicon fa fa-tablet"></i>Responsive</span>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="projects-wrapper">
+      <div class="project-section">
+        <div class="pictures" id='mobile-column'>
+          <div class="mobile-wrapper">
+            <img src="images/allchat-users.PNG" alt="chat-app-users" class="project-picture">
+            <img src="images/mobile-chatapp.PNG" alt="chat-app-mobile" class="project-picture">
+          </div>
+          <img src="images/chatapp-desktop.png" alt="chat-app-desktop" class="project-picture">
+        </div>
+        <div class="description">
+          <h5 class="project-header">All Chat</h5>
+          <p class="text">
+            All Chat is written with <span class="rails">Ruby on Rails</span> and built to utilize Action Cable, Rails' WebSocket wrapper. 
+            In addition to handrolled CSS, I used <span class="bulma">Bulma CSS</span>for styling, and <span class="javascript">Javascript</span>
+            to both bring the page to life, and program the WebSocket actions.
+          </p>
+          <p class="text">
+            All Chat is uses WebSocket's to keep an open connection between clients and the server, allowing users
+            to stream data directly to each other. I wanted to highlight the versatility and 
+            practicality of WebSockets by showing off their use in an instant messaging app.
+          </p>
+          <p class="text">
+            Users login to send messages over secure channels, with each chat room having its own unique channel.
+            User's can create rooms as well as destroy them, updated in real time thanks to Action Cable.
+          </p>
+          <p class="text">
+            Users who are 'online' have a <i class="fa fa-circle green"></i> green dot next to their name, and 'offline' users a <i class="fa fa-circle"></i> gray one. A users online status updates
+            as they come on and offline, as well as the number of users in a room.
+          </p>
           <div class="code-buttons">
-            <a href="https://github.com/nhleto/Roundtable" class="code" target="_blank" rel="noopener noreferrer">View Code</a>
-            <a href="http://social-roundtable.herokuapp.com" class="live" target="_blank" rel="noopener noreferrer">See it live</a>
+            <a href="https://github.com/nhleto/Chat-App" class="code" target="_blank" rel="noopener noreferrer">View Code</a>
+            <a href="https://social-allchat.herokuapp.com" class="live" target="_blank" rel="noopener noreferrer">See it live</a>
+          </div>
+          <div class="tag-list">
+            <span class="tag"><i class="devicon devicon-ruby-plain"></i>Ruby</span>
+            <span class="tag"><i class="devicon devicon-rails-plain"></i>Rails 6</span>
+            <span class="tag"><i class="devicon devicon-postgresql-plain"></i>PostgreSQL</span>
+            <span class="tag"><i class="devicon devicon-javascript-plain"></i>Javascript</span>
+            <span class="tag"><i class="devicon devicon-heroku-original"></i>Heroku</span>
+            <span class="tag"><img src="images/bulma-logo.png" alt="bulma-icon" class='bulma'>Bulma CSS</span>
+            <span class="tag"><i class="devicon devicon-redis-plain"></i>Redis</span>            
+            <span class="tag"><i class="devicon fa fa-tablet"></i>Responsive</span>
           </div>
         </div>
       </div>

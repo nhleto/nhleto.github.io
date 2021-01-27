@@ -44,6 +44,10 @@ body{
 }
 
 @media only screen and (max-width: 1080px){
+  .pictures{
+    flex-direction: column;
+    display: flex;
+  }
   .navbar{
     flex-direction: column;
   }
@@ -78,8 +82,12 @@ body{
   .nav-name, .nav-description{
     margin-left: 100px;
   }
+  .mobile-wrapper{
+    display: flex;
+    justify-content: center;
+  }
   .project-picture{
-    max-height: 280px;
+    max-height: 450px;
     max-width: 500px;
     border-radius: 5px;
     margin-right: 25px;
@@ -199,7 +207,7 @@ footer{
 .code-buttons{
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .code, .live{
@@ -355,4 +363,13 @@ footer{
   text-decoration: none;
   cursor: pointer;
   font-size: 70px;
+}
+
+.fa.fa-circle{
+  font-size: 15px;
+  color: gray;
+}
+
+.fa.fa-circle.green{
+  color: green;
 }
