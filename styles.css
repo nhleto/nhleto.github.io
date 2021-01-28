@@ -43,6 +43,9 @@ body{
 }
 
 @media only screen and (max-width: 1080px){
+  .desktop-header{
+    display: none;
+  }
   #mobile-header{
     display: flex;
     justify-content: center;
@@ -253,7 +256,6 @@ footer{
 .border-divider{
   border-top: 2px solid #a09c87;
   padding-top: 30px;
-  /* width: 80%; */
 }
 
 .divider{
