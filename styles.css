@@ -28,7 +28,6 @@ body{
   height: fit-content;
 }
 
-
 .nav-name{
   padding: 20px 20px 0 20px;
   font-weight: 500;
@@ -44,6 +43,14 @@ body{
 }
 
 @media only screen and (max-width: 1080px){
+  #mobile-header{
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-wrapper{
+    display: inline-grid;
+    justify-content: center;
+  }
   .pictures{
     flex-direction: column;
     display: flex;
@@ -68,10 +75,12 @@ body{
     padding: 0px;
   }
   .project-picture{
+    max-height: 475px;
     max-width: 300px;
     border-radius: 5px;
-    margin-right: 25px;
+    border-radius: 5px;
     margin-bottom: 20px;
+    transition: .25s ease;
   }
   .scroll{
     opacity: 0;
@@ -79,12 +88,15 @@ body{
   }
 }
 @media only screen and (min-width: 1080px){
+  #mobile-header{
+    display: none;
+  }
   .nav-name, .nav-description{
     margin-left: 100px;
   }
   .mobile-wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
   .project-picture{
     max-height: 450px;
@@ -92,6 +104,8 @@ body{
     border-radius: 5px;
     margin-right: 25px;
     margin-bottom: 20px;
+    transition: .25s ease;
+    border-radius: 5px;
   }
   .project-section{
     padding: 30px;
@@ -236,6 +250,11 @@ footer{
   font-size: 40px;
 }
 
+.border-divider{
+  border-top: 2px solid #a09c87;
+  padding-top: 30px;
+  /* width: 80%; */
+}
 
 .divider{
   padding: 30px;
@@ -372,4 +391,64 @@ footer{
 
 .fa.fa-circle.green{
   color: green;
+}
+
+.picture-size{
+  transform: scale(1.25);
+  left: 50px;
+}
+
+.image-container{
+  position: relative;
+  text-align: center;
+}
+
+.center-pic{
+  opacity: 0;
+  cursor: pointer;
+  background-color: rgb(43 39 39);
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: rgb(248, 239, 213);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .25s ease-in-out;
+}
+
+.center-pic1{
+  opacity: 0;
+  cursor: pointer;
+  background-color: rgb(43 39 39);
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: rgb(248, 239, 213);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .25s ease-in-out;
+}
+
+.mobile-wrapper .project-picture:hover, #chess .project-picture:hover{
+  animation: shake .75s ease;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(0px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(0, 0, 0);
+  }
 }

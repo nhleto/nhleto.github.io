@@ -57,13 +57,17 @@
     </div>
     <h1 class="title projects">Projects</h1>
     <div class="projects-wrapper">
+      <h5 class='project-header' id='mobile-header'>Roundtable</h5>
       <div class="project-section">
         <div class="pictures">
           <div class="mobile-wrapper">
             <img src="images/roundtable-mobile.PNG" alt="Roundtable-login" class='project-picture'>
             <img src="images/roundtable-mobile-homepage.PNG" alt="Roundtable-login" class='project-picture'>
           </div>
-          <img src="images/Roundtable.png" alt="Roundtable-website" class='project-picture'>
+          <div class="image-container">
+            <img src="images/Roundtable.png" alt="Roundtable-website" class='project-picture' id='roundtable-desktop'>
+            <div class="center-pic">Click Me</div>
+          </div>
         </div>
         <div class="description">
           <h5 class='project-header'>Roundtable</h5>
@@ -104,13 +108,17 @@
       </div>
     </div>
     <div class="projects-wrapper">
-      <div class="project-section">
+      <div class="project-section border-divider">
+        <h5 class="project-header" id='mobile-header'>All Chat</h5>
         <div class="pictures" id='mobile-column'>
           <div class="mobile-wrapper">
-            <img src="images/allchat-users.PNG" alt="chat-app-users" class="project-picture">
             <img src="images/mobile-chatapp.PNG" alt="chat-app-mobile" class="project-picture">
+            <img src="images/allchat-users.PNG" alt="chat-app-users" class="project-picture">
           </div>
-          <img src="images/chatapp-desktop.png" alt="chat-app-desktop" class="project-picture">
+          <div class="image-container">
+            <img src="images/chatapp-desktop.png" alt="chat-app-desktop" class="project-picture" id='allchat-desktop'>
+            <div class="center-pic1">Click Me</div>
+          </div>
         </div>
         <div class="description">
           <h5 class="project-header">All Chat</h5>
@@ -120,8 +128,8 @@
             to both bring the page to life, and program the WebSocket actions.
           </p>
           <p class="text">
-            All Chat is uses WebSocket's to keep an open connection between clients and the server, allowing users
-            to stream data directly to each other. I wanted to highlight the versatility and 
+            All Chat uses WebSockets to keep an open connection between clients and the server, allowing users
+            to stream data directly to each other. I used All Chat highlight the versatility and 
             practicality of WebSockets by showing off their use in an instant messaging app.
           </p>
           <p class="text">
@@ -150,13 +158,14 @@
       </div>
     </div>
     <div class="projects-wrapper">
-      <div class="project-section">
-        <div class="pictures">
+      <div class="project-section border-divider">
+        <h5 class="project-header" id='mobile-header'>Chess</h5>
+        <div class="pictures" id='chess'>
           <img src="images/Chess.png" alt="chess" class='project-picture'>
           <img src="images/Chess-tests.png" alt="Chess-tests" class='project-picture'>
         </div>
         <div class="description">
-          <div class="project-header">Chess</div>
+          <h5 class="project-header">Chess</h5>
           <p class="text">
             Written in pure <span class="rails">Ruby</span>, this command-line chess game was developed following standard chess guidlines.
             The game is programmed with all major chess moves in mind, including:

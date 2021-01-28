@@ -44,3 +44,81 @@ function projects() {
   const projects = document.querySelector('.projects')
   projects.scrollIntoView({ behavior: 'smooth' });
 }
+
+let roundtable = document.querySelector('#roundtable-desktop')
+let center = document.querySelector('.center-pic')
+
+let allchat = document.querySelector('#allchat-desktop')
+let center1 = document.querySelector('.center-pic1')
+
+center1.addEventListener('mouseover', ()=>{
+  center1.style.opacity = '1'
+ })
+
+ allchat.addEventListener('mouseover', ()=>{
+ center1.style.opacity = '1'
+})
+
+allchat.addEventListener('mouseout', ()=>{
+  center1.style.opacity = '0'
+  if (!allchat.classList.contains('picture-size')){
+    allchat.insertAdjacentElement('afterend', center1)
+  }
+ })
+
+ center1.addEventListener('mouseout', ()=>{
+  center1.style.opacity = '0'
+ })
+
+ center1.addEventListener('click', ()=>{
+  allchat.classList.toggle('picture-size')
+  center1.remove()
+ })
+
+ allchat.addEventListener('click', ()=>{
+  allchat.classList.toggle('picture-size')
+  center1.remove()
+})
+
+window.addEventListener('click', (e)=>{
+  if (e.target !== allchat && e.target !== center1){
+    allchat.classList.remove('picture-size')
+    allchat.insertAdjacentElement('afterend', center1)
+  }
+})
+
+center.addEventListener('mouseover', ()=>{
+  center.style.opacity = '1'
+ })
+
+roundtable.addEventListener('mouseover', ()=>{
+ center.style.opacity = '1'
+})
+
+roundtable.addEventListener('mouseout', ()=>{
+  center.style.opacity = '0'
+  if (!roundtable.classList.contains('picture-size')){
+    roundtable.insertAdjacentElement('afterend', center)
+  }
+ })
+
+ center.addEventListener('mouseout', ()=>{
+  center.style.opacity = '0'
+ })
+
+ center.addEventListener('click', ()=>{
+  roundtable.classList.toggle('picture-size')
+  center.remove()
+ })
+
+roundtable.addEventListener('click', ()=>{
+  roundtable.classList.toggle('picture-size')
+  center.remove()
+})
+
+window.addEventListener('click', (e)=>{
+  if (e.target !== roundtable && e.target !== center){
+    roundtable.classList.remove('picture-size')
+    roundtable.insertAdjacentElement('afterend', center)
+  }
+})
