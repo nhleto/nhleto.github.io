@@ -137,7 +137,7 @@ const particles = {
       "value": "rgb(248, 239, 213)",
       "animation": {
         "enable": false,
-        "speed": 20,
+        "speed": 15,
         "sync": true
       }
     },
@@ -172,7 +172,7 @@ const particles = {
     },
     "links": {
       "enable": true,
-      "distance":75,
+      "distance": 65,
       "color": "#ffffff",
       "opacity": 0.2,
       "width": 1
@@ -221,7 +221,7 @@ const particles = {
         "distance": 200
       },
       "push": {
-        "particles_nb": 4
+        "particles_nb": 1
       },
       "remove": {
         "particles_nb": 2
