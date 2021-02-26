@@ -239,3 +239,4 @@ const particles = {
 };
 
 tsParticles.load('tsparticles', particles);
+tsParticles.load('tsparticles-2', particles)
