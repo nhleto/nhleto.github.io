@@ -502,7 +502,9 @@ footer{
 }
 
 .skills{
+  transform-style: preserve-3d;
   display: flex;
+  perspective: 900px;
 }
 
 .skills-item{

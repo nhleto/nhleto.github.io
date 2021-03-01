@@ -15,6 +15,33 @@ function topFunction(){
   document.documentElement.scrollTo({top: 0, behavior: 'smooth'});
 }
 
+let container = document.querySelector('.divider.top')
+let inner = document.querySelectorAll('.skills-item')
+
+container.addEventListener('mousemove', (e)=>{
+  let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+  let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+  inner.forEach(element => {
+    element.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
+  });
+})
+
+//bring back to normal after animate out
+container.addEventListener('mouseleave', (e)=>{
+  inner.forEach(element => {
+    element.style.transition = 'all .5s ease'
+    element.style.transform = `rotateY(0deg) rotateX(0deg)`;
+  });
+})
+
+container.addEventListener('mouseenter', (e)=>{
+  inner.forEach(element => {
+    element.style.transition = 'all .5s ease'
+    setTimeout(() => {
+      element.style.transition = 'none'
+    }, 100);
+  });
+})
 
 document.querySelector('.copy').addEventListener('click', () => {
   const email = document.querySelector('.email')
@@ -114,7 +141,7 @@ roundtable.addEventListener('mouseout', ()=>{
 roundtable.addEventListener('click', ()=>{
   roundtable.classList.toggle('picture-size')
   center.remove()
-})
+});
 
 window.addEventListener('click', (e)=>{
   if (e.target !== roundtable && e.target !== center){
