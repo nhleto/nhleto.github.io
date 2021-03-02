@@ -58,6 +58,9 @@ body{
     height: 50%;
     position: absolute;
   }
+  .skills{
+    margin-top: 30px;
+  }
   .skills-item{
     font-size: 3em;
   }

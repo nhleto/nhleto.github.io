@@ -19,8 +19,8 @@ let container = document.querySelector('.divider.top')
 let inner = document.querySelectorAll('.skills-item')
 
 container.addEventListener('mousemove', (e)=>{
-  let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
-  let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+  let xAxis = (window.innerWidth / 1.75 - e.pageX) / 25;
+  let yAxis = (window.innerHeight / 1.75 - e.pageY) / 25;
   inner.forEach(element => {
     element.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
   });
